@@ -28,10 +28,10 @@ export class AppComponent {
 
   search: any = {
     keyword: '',
-    channelId: 'UCtinbF-Q-fVthA0qrFQTgXQ',
+    channelId: 'UCtinbF-Q-fVthA0qrFQTgXQ', // famous channel of casey neistat https://www.youtube.com/channel/UCtinbF-Q-fVthA0qrFQTgXQ just to show some data
     note: '',
     type: '',
-    maxResults: 5,
+    maxResults: 5, // default 5 ruseults
   };
   constructor(private sanitizer: DomSanitizer, private store: Store) {}
 

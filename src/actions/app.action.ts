@@ -1,4 +1,3 @@
-//Read
 export class GetYoutubeVideos {
   static readonly type = '[Videos] Fetch';
   constructor(public channelId: string, public maxResults: number) {}

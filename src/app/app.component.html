@@ -31,41 +31,16 @@
     </div>
     </div>
     <div class="row" *ngIf="!isLoading && error">
-      <p class="text-danger">Eroor: {{error}}</p>
+      <p class="text-danger">Error: {{error}}</p>
     </div>
    
-    <!-- <div class="row my-2 g-3 row-cols-1 row-cols-sm-2 row-cols-md-3 cow-cols-lg-4" *ngIf="!isLoading  ">
-     
-       <div class="col" *ngFor="let item of response.items; let i=index" cdkDrag>
-         <div class="card h-100">
-          <div class="ratio ratio-4x3">
-            <iframe class="embed-responsive-item"  [src]="getVideoSource(item.id.videoId)" allowfullscreen></iframe>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title text-truncate">{{item.snippet.title}}</h5>
-          </div>
-        
-          <div class="form-outline w-75 mb-4">
-            <textarea class="form-control" id="textAreaExample6" rows="3" placeholder="Add comment :)" ></textarea>
-            <label class="form-label" for="textAreaExample6"></label>
-            <div class="">
-              <button id="btnAdd" type="button" class="btn btn-outline-success  " >Add</button>
-            </div>
-          </div>
-         
-          <div class="card-footer">
-            <span class="float-end">{{item.id.kind}} | ID: {{item.id.videoId}}</span>
-          </div>
-          </div>
-        </div> 
-   
-    </div> -->
+
   
 </div>
 <div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
   <div class="col my-2 g-3 row-cols-12 row-cols-sm-12 row-cols-md-12 cow-cols-lg-12" *ngIf="videos && videos.length > 0">
 
-  <div class="example-box"  *ngFor="let item of videos; let i=index" cdkDrag>
+  <div class="example-box d-flex justify-content-around"  *ngFor="let item of videos; let i=index" cdkDrag> 
     <div class="card h-100">
       <div class="ratio ratio-4x3">
         <iframe class="embed-responsive-item"  [src]="getVideoSource(item['id']['videoId'])" allowfullscreen></iframe>

@@ -33,7 +33,7 @@ export class AppState {
 
     const urlParams = new HttpParams()
       .set('part', 'snippet')
-      .set('key', 'AIzaSyA-j-MWmAtsuR65WOzQQ79HWNWeiht89Rg')
+      .set('key', 'AIzaSyA-j-MWmAtsuR65WOzQQ79HWNWeiht89Rg')// Youtube API key here
       .set('channelId', channelId)
       .set('maxResults', maxResults);
 
@@ -49,7 +49,7 @@ export class AppState {
         videos: temp,
       });
     } catch (err) {
-      console.log(`xxxxxxxxxxxxxxxxxxxx`, err);
+      console.log(`err`, err);
     }
   }
 
