@@ -71,11 +71,8 @@ export class AppComponent {
   }
 
   getVideoSource(id: string): SafeResourceUrl {
-    // console.log(`wwwwwwwwwwww`);
-
     if (id != '') {
       const url = 'https://www.youtube.com/embed/' + id;
-      // console.log(this.sanitizer.bypassSecurityTrustResourceUrl(url));
 
       return this.sanitizer.bypassSecurityTrustResourceUrl(url);
     } else {
