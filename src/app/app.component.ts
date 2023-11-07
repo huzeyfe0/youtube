@@ -28,7 +28,7 @@ export class AppComponent {
 
   search: any = {
     keyword: '',
-    channelId: 'UCtinbF-Q-fVthA0qrFQTgXQ', // famous channel of casey neistat https://www.youtube.com/channel/UCtinbF-Q-fVthA0qrFQTgXQ just to show some data
+    channelId: 'UC6107grRI4m0o2-emgoDnAA', // famous channel of youtube SmarterEveryDay https://www.youtube.com/channel/UC6107grRI4m0o2-emgoDnAA just to show some data
     note: '',
     type: '',
     maxResults: 5, // default 5 ruseults
